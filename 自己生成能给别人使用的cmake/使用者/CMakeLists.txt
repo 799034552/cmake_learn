@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(main)
+set(CMAKE_PREFIX_PATH  "F:/c/C++/install_project/")
+find_package(JsonParse REQUIRED)
+add_executable(main main.cpp)
+target_link_libraries(main PRIVATE JsonParse::JsonParse)
